@@ -1,3 +1,4 @@
+```sql
 insert into Genre(name) values
 ('pop'),
 ('rock'),
@@ -94,3 +95,4 @@ select Album.name, count(Track.id) as tracks_amount from Album
 join Track on Album.id = Track.album_id
 group by Album.name
 order by count(Track.id) limit 1;
+```
