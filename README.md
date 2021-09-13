@@ -95,5 +95,5 @@ where Track.duration = (select min(Track.duration) from Track) LIMIT 1;
 select Album.name, count(Track.id) as tracks_amount from Album
 join Track on Album.id = Track.album_id
 group by Album.name
-order by count(Track.id) limit 1;
+order by tracks_amount limit 1;
 ```
