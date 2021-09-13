@@ -64,7 +64,8 @@ join SingerAlbum on SingerAlbum.singer_id = Singer.id
 join Album on SingerAlbum.album_id = Album.id
 where pub_year <> 2020;
 
-#названия сборников, в которых присутствует конкретный исполнитель (выберите сами); Не совсем понял, что именно нужно было сделать в этом задании!!!
+#названия сборников, в которых присутствует конкретный исполнитель (выберите сами); 
+###Не совсем понял, что именно нужно было сделать в этом задании!!!
 select name from Collection
 where name like '%Kate%';
 
